@@ -16,12 +16,6 @@ namespace WebAPI.Controllers
             _pointService = pointService;
         }
 
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return Ok("Hello");
-        }
-
         [HttpPost("AddPoint")]
         public async Task<IActionResult> AddPoint(CreatePointViewModel model)
         {
